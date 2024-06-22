@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noctis Lucis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #272b2c;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+        }
+        header a {
+            color: #b0bec5;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #1c1f21;
+            padding: 20px;
+            border: 1px solid #b0bec5;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        header h1 {
+            color: #b0bec5;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #b0bec5;
+        }
+        pre {
+            white-space: pre-wrap;
+            background-color: #1c1f21;
+            padding: 15px;
+            border: 1px solid #b0bec5;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            tab-size: 4;
+            overflow-x: auto;
+            color: #b0bec5;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: 400px;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #000000;
+            color: #b0bec5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #b0bec5;
+        }
+        footer a {
+            color: #b0bec5;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="playAudio()">Play Audio</button>
+
+    <audio id="myAudio">
+        <source src="plastic.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <header>
+        <h1>Noctis Lucis</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="https://www.youtube.com/watch?v=UfNuombVZb4" target="_blank"><h3>If Looks could kill</h3></a>
+<a href="https://www.youtube.com/watch?v=ANTv-MwPLUw" target="_blank"><img src="giphy.webp" alt="Noctis Image"></a>
+
+        <pre>
+    Noctis Lucis Caelum is the (initially sole) playable character and main protagonist of Final Fantasy XV. 
+    He is the crown prince and heir to the throne of Lucis, the kingdom with control over the Crystal. 
+    Thus, he can wield the power of Lucian kings. He was first announced for the cancelled game Final Fantasy Versus XIII,
+    which eventually transformed into the Final Fantasy XV Universe.</pre>
+    </main>
+
+    <footer>
+        <hr>
+        Author: Rogelio<br>
+        &copy; copyright reserved<br>
+        <small><a href="mailto:isahit2005@gmail.com">isahit2005@gmail.com</a></small>
+    </footer>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.currentTime = 77;
+            audio.play();
+        }
+    </script>
+</body>
+</html>
